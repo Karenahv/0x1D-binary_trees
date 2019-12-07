@@ -22,6 +22,7 @@ typedef struct binary_tree_s
 } binary_tree_t;
 
 typedef struct binary_tree_s bst_t;
+typedef struct binary_tree_s avl_t;
 void binary_tree_print(const binary_tree_t *);
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
@@ -58,4 +59,5 @@ bst_t *bst_search(const bst_t *tree, int value);
 int binary_tree_is_avl(const binary_tree_t *tree);
 bst_t *bst_remove(bst_t *root, int value);
 bst_t *minValue(bst_t *node);
+avl_t *avl_insert(avl_t **tree, int value);
 #endif /* _BINARY_TREES_H_ */
